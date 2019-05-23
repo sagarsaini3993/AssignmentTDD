@@ -52,7 +52,7 @@ public class YellingTest {
 		Yelling y = new Yelling();
 		String[] arr = {"Peter" , "Kadeem" , "Albert"};
 		String actualOutput = y.scream(arr);
-		assertEquals("Peter, Kadeem, and Albert are yelling", actualOutput);
+		assertEquals("Peter , Kadeem ,  and Albert are yelling", actualOutput);
 	}
 
 }
