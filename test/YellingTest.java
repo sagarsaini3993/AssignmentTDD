@@ -13,7 +13,8 @@ public class YellingTest {
 	public void testOnePersonYelling() {
 		
 		Yelling y = new Yelling();
-		String actualOutput = y.scream("Peter");
+		String[] arr = {"Peter"};
+		String actualOutput = y.scream(arr);
 		assertEquals("Peter is yelling", actualOutput);
 	}
 	
@@ -22,7 +23,8 @@ public class YellingTest {
 	public void testNobodyIsYelling() {
 		
 		Yelling y = new Yelling();
-		String actualOutput = y.scream("");
+		String[] arr = {""};
+		String actualOutput = y.scream(arr);
 		assertEquals("Nobody is yelling", actualOutput);
 	}
 	
@@ -30,8 +32,18 @@ public class YellingTest {
 	public void testUppercaseYelling() {
 		
 		Yelling y = new Yelling();
-		String actualOutput = y.scream("PETER");
+		String[] arr = {"PETER"};
+		String actualOutput = y.scream(arr);
 		assertEquals("PETER IS YELLING", actualOutput);
+	}
+	
+	@Test
+	public void testTwoPeopleAreYelling() {
+		
+		Yelling y = new Yelling();
+		String[] arr = {"Peter" , "Kadeem"};
+		String actualOutput = y.scream(arr);
+		assertEquals("Peter and Kadeem are yelling", actualOutput);
 	}
 
 }
