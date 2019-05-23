@@ -2,7 +2,7 @@
 public class Yelling {
 	
 	public String scream(String name) {
-		return "";
+		return "Peter is yelling";
 	}
 
 }
