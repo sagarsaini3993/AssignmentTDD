@@ -25,5 +25,13 @@ public class YellingTest {
 		String actualOutput = y.scream("");
 		assertEquals("Nobody is yelling", actualOutput);
 	}
+	
+	@Test
+	public void testUppercaseYelling() {
+		
+		Yelling y = new Yelling();
+		String actualOutput = y.scream("PETER");
+		assertEquals("PETER IS YELLING", actualOutput);
+	}
 
 }
