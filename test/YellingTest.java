@@ -23,7 +23,7 @@ public class YellingTest {
 		
 		Yelling y = new Yelling();
 		String actualOutput = y.scream("");
-		assertEquals("Peter is yelling", actualOutput);
+		assertEquals("Nobody is yelling", actualOutput);
 	}
 
 }
