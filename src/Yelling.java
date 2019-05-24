@@ -1,7 +1,11 @@
 
 public class Yelling {
 	
+	
+	
 	public String scream(String[] name) {
+		
+		String nam = "";
 		
 		if (name[0] == "") {
 			return "Nobody is yelling";
@@ -15,10 +19,17 @@ public class Yelling {
 			return name[0]+ " and " +name[1]+ " are yelling";
 		}
 		
-		else if (name.length >= 2) {
-			String nam = "";	
+		else if (name.length > 2) {
+			String upper = "hola";
+			System.out.println(name.length);
+		
 			for (int i = 0; i <name.length; i++) {
-			
+				System.out.println(name[i]);
+				if (name[i] == name[i].toUpperCase()) {
+					upper = name[i];
+				System.out.println("Upper is "+upper);
+				}
+				
 				nam = nam + name[i];
 				if(i<(name.length)-1)
 				{
@@ -27,9 +38,15 @@ public class Yelling {
 				if(i==(name.length)-2)
 				{
 					nam = nam + " and ";
+				
 				}
 				
-			}return nam +" are yelling";
+			}
+			if(upper.toUpperCase() == upper)
+			{
+				return nam + " are yelling,So is "+upper;
+			}
+			return nam +" are yelling";
 		}
 		return name[0]+" is yelling";
 	}
