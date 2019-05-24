@@ -10,7 +10,7 @@ public class YellingTest {
 	@Before
 	public void setUp() throws Exception {
 	}
-
+	//One person is yelling
 	@Test
 	public void testOnePersonYelling() {
 		
@@ -19,7 +19,7 @@ public class YellingTest {
 		assertEquals("Peter is yelling", actualOutput);
 	}
 	
-	
+	//Nobody is yelling
 	@Test
 	public void testNobodyIsYelling() {
 		
@@ -27,7 +27,7 @@ public class YellingTest {
 		String actualOutput = y.scream(arr);
 		assertEquals("Nobody is yelling", actualOutput);
 	}
-	
+	//Uppercase is yelling
 	@Test
 	public void testUppercaseYelling() {
 		
@@ -35,7 +35,7 @@ public class YellingTest {
 		String actualOutput = y.scream(arr);
 		assertEquals("PETER IS YELLING", actualOutput);
 	}
-	
+	//Two people are yelling
 	@Test
 	public void testTwoPeopleAreYelling() {
 		
@@ -43,7 +43,7 @@ public class YellingTest {
 		String actualOutput = y.scream(arr);
 		assertEquals("Peter ,  and Kadeem are yelling", actualOutput);
 	}
-	
+	//More than two are yelling
 	@Test
 	public void testMoreThanTwoPeopleAreYelling() {
 		
@@ -51,7 +51,7 @@ public class YellingTest {
 		String actualOutput = y.scream(arr);
 		assertEquals("Peter , Kadeem ,  and Albert are yelling", actualOutput);
 	}
-	
+	//Shouting alot
 	@Test
 	public void testShoutingAtLot() {
 		

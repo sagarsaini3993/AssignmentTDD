@@ -6,16 +6,16 @@ public class Yelling {
 	public String scream(String[] name) {
 		
 		String nam = "";
-		
+		//Nobody is yelling
 		if (name[0] == "") {
 			return "Nobody is yelling";
 		}
-		
+		//Upper caes is yelling
 		else if (name[0] == name[0].toUpperCase()) {
 			return name[0]+" IS YELLING";			
 		}
 		
-				
+			//Two and more than two are yelling	
 		else if (name.length >= 2) {
 			String upper = "hola";
 			System.out.println(name.length);
@@ -45,6 +45,7 @@ public class Yelling {
 			}
 			return nam +" are yelling";
 		}
+		//One is yelling
 		return name[0]+" is yelling";
 	}
 
