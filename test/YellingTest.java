@@ -51,5 +51,13 @@ public class YellingTest {
 		String actualOutput = y.scream(arr);
 		assertEquals("Peter , Kadeem ,  and Albert are yelling", actualOutput);
 	}
+	
+	@Test
+	public void testShoutingAtLot() {
+		
+		String[] arr = {"Peter" , "KADEEM" , "Albert"};
+		String actualOutput = y.scream(arr);
+		assertEquals("Peter , KADEEM ,  and Albert are yelling, So is KADEEM", actualOutput);
+	}
 
 }
