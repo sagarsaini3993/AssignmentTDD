@@ -15,11 +15,8 @@ public class Yelling {
 			return name[0]+" IS YELLING";			
 		}
 		
-		else if (name.length == 2) {
-			return name[0]+ " and " +name[1]+ " are yelling";
-		}
-		
-		else if (name.length > 2) {
+				
+		else if (name.length >= 2) {
 			String upper = "hola";
 			System.out.println(name.length);
 		
