@@ -15,10 +15,8 @@ public class Yelling {
 			return name[0]+ " and " +name[1]+ " are yelling";
 		}
 		
-		else if (name.length > 2) {
-			String nam = "";
-			System.out.println("nam" +nam +name.length);
-			
+		else if (name.length >= 2) {
+			String nam = "";	
 			for (int i = 0; i <name.length; i++) {
 			
 				nam = nam + name[i];

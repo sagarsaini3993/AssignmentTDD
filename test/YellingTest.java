@@ -4,6 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class YellingTest {
+	
+	Yelling y = new Yelling();
 
 	@Before
 	public void setUp() throws Exception {
@@ -12,7 +14,6 @@ public class YellingTest {
 	@Test
 	public void testOnePersonYelling() {
 		
-		Yelling y = new Yelling();
 		String[] arr = {"Peter"};
 		String actualOutput = y.scream(arr);
 		assertEquals("Peter is yelling", actualOutput);
@@ -22,7 +23,6 @@ public class YellingTest {
 	@Test
 	public void testNobodyIsYelling() {
 		
-		Yelling y = new Yelling();
 		String[] arr = {""};
 		String actualOutput = y.scream(arr);
 		assertEquals("Nobody is yelling", actualOutput);
@@ -31,7 +31,6 @@ public class YellingTest {
 	@Test
 	public void testUppercaseYelling() {
 		
-		Yelling y = new Yelling();
 		String[] arr = {"PETER"};
 		String actualOutput = y.scream(arr);
 		assertEquals("PETER IS YELLING", actualOutput);
@@ -40,7 +39,6 @@ public class YellingTest {
 	@Test
 	public void testTwoPeopleAreYelling() {
 		
-		Yelling y = new Yelling();
 		String[] arr = {"Peter" , "Kadeem"};
 		String actualOutput = y.scream(arr);
 		assertEquals("Peter and Kadeem are yelling", actualOutput);
@@ -49,7 +47,6 @@ public class YellingTest {
 	@Test
 	public void testMoreThanTwoPeopleAreYelling() {
 		
-		Yelling y = new Yelling();
 		String[] arr = {"Peter" , "Kadeem" , "Albert"};
 		String actualOutput = y.scream(arr);
 		assertEquals("Peter , Kadeem ,  and Albert are yelling", actualOutput);
